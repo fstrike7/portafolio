@@ -12,7 +12,14 @@ body{
 }
 
 #header-principal{
-    padding-left: 10%;
+    color: rgba(0, 0, 0,.8);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+}
+
+#header-principal:hover{
+    color: rgb(0, 0, 0,.3);
 }
 
 #page-container {
@@ -35,15 +42,15 @@ body{
 #barra-navegacion{
     height: 20px;
 }
-ul{
-    padding-left: 40%
+.botones{
+   position: absolute;
 }
 .boton{
     display: inline;
     padding-left: 25px;
     padding-right: 25px;
     border-radius: 10px;
-    background: rgba(149, 218, 85, 0.6);
+    background: rgba(149, 218, 85, 0.0);
     text-decoration: white;
     transition: 0.3s;
 }
@@ -53,6 +60,8 @@ ul{
 }
 a{
     text-decoration: none;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.37);
 }
 a:hover{
     text-decoration:indianred;
@@ -64,11 +73,14 @@ a:hover{
     float: left;
 } */
 #contenido-principal{
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color:rgba(255, 245, 238, 0.2);
+    
+    display: flex;
+    justify-content: center;
+    background-color:rgba(255, 245, 238, 0.3);
     border-radius: 10px;
     padding-bottom: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 #profile-picture{
     margin-top: 2%;
@@ -101,13 +113,13 @@ a:hover{
 }
 .elementos-habilidades{
     background: rgba(11, 116, 158, 0.3);
-    padding-left: 2%;
     margin-left: 5%;
-    margin-right: 25%;
     border-radius: 0px 25px 10px 10px;
     text-align: justify;
     padding-bottom: 1%;
     padding-top: 1%;
+    padding-right: 5%;
+    padding-left: 5%;
     transition: 0.3s;
 }
 .elementos-habilidades:hover{
@@ -115,26 +127,17 @@ a:hover{
 }
 .elementos-habilidades-adicionales{
     background: rgba(11, 158, 102, 0.3);
-    padding-left: 2%;
     margin-left: 5%;
-    margin-right: 25%;
     border-radius: 0px 25px 10px 10px;
     text-align: justify;
     padding-bottom: 1%;
     padding-top: 1%;
+    padding-right: 5%;
+    padding-left: 5%;
     transition: 0.3s;
 }
 .elementos-habilidades-adicionales:hover{
     background: rgba(11, 158, 102, 0.7);
-}
-
-h1{
-    color: rgba(0, 0, 0,.8);
-    transition: 0.3s;
-    margin-right: 80%;
-}
-h1:hover{
-    color: rgb(0, 0, 0,.3);
 }
 
 .name-web{
