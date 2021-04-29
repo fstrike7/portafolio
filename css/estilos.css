@@ -125,6 +125,7 @@ a:hover{
 }
 .elementos-habilidades:hover{
     background: rgba(11, 116, 158, 0.7);
+    transform: scale(1.1);
 }
 .elementos-habilidades-adicionales{
     background: rgba(11, 158, 102, 0.3);
@@ -139,6 +140,7 @@ a:hover{
 }
 .elementos-habilidades-adicionales:hover{
     background: rgba(11, 158, 102, 0.7);
+    transform: scale(1.1);
 }
 
 .name-web{
