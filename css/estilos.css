@@ -48,18 +48,14 @@ body{
 
 
 #barra-navegacion{
-    display: flex;
+    display: inline-flex;
+    flex-flow: row wrap;
     justify-content: flex-start;
     height: 20px;
     margin: 20px 0;
 }
 
 
-@media (orientation:portrait){
-    #barra-navegacion{
-        justify-content: center;
-    }
-}
 
 .boton{
     display: inline;
@@ -98,7 +94,7 @@ a:hover{
     flex-flow: column wrap;
     justify-content: center;
     align-items: stretch;
-    align-content: center;
+    align-content: space-around;
 }
 
 #contenido-hijo{
@@ -127,30 +123,25 @@ a:hover{
   }
 
 .cards{
-    margin: 5% auto;
-    width: 70%;
+    margin: 5%;
 
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
+    flex-flow: row wrap;
+    justify-content: center;
     align-items: stretch;
-    align-content: space-around;
-}
-
-.card,
-.card::after,
-.card::before{
-    box-sizing: content-box;
-}
+}       
 
 .card{
+
+    
+    flex: 0 1 20%;
+    align-self: stretch;
 
     margin: 25px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background: rgba(128, 128, 128,0.1);
     transition: 0.3s;
     padding: 20px;
-    flex: 1 1 auto;
     color: rgba(255, 255, 255, 0.637);
 
 }
@@ -217,4 +208,18 @@ a:hover{
 
 .name-web{
     text-align: center;
+}
+
+
+@media all and (orientation:portrait){
+    #barra-navegacion{
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
+    .cards{ 
+        flex-flow: column nowrap;
+    }
+    .card{
+        flex: 1 1 auto;
+    }
 }
