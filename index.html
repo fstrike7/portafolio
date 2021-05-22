@@ -14,24 +14,26 @@
         <div id="content-wrap">
             <nav id="barra-navegacion">
                 <ul class="botones">
-                    <li class="boton" style="text-decoration: underline;"><a href="index.html">Inicio</a></li>
-                    <li class="boton"><a href="proyectos.html">Proyectos</a></li>
-                    <li class="boton"><a href="contacto.html">Contacto</a></li>
+                    <li class="boton" style="text-decoration: underline;"><a class="link" href="index.html">Inicio</a></li>
+                    <li class="boton"><a class="link" href="proyectos.html">Proyectos</a></li>
+                    <li class="boton"><a class="link" href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
             <header id="header-principal">
-                <h1>Home</h1>
+                <h1>Inicio</h1>
             </header>
             
             <section id="contenido-principal">
-                    <article class="contenido-hijo">
-                        <figure>
+                    <article id="contenido-hijo">
+                        <figure id="info">
                             <img src="images/yo.jpg" alt="brc" id="profile-picture"/>
                         
-                            <aside>
-                                <h3>Faustino Beatrice</h3>
-                                <p>18 años, aficionado a la programación, principalmente en el desarrollo web Backend.</p>
-                                <p>🎓 Actualmente curso la carrera de Técnico Superior en Programación.</p>
+                            <aside class="info-hijo">
+                                <h2>Faustino Beatrice</h2>
+                                <div class="text">
+                                    <p>18 años, aficionado a la programación, principalmente en el desarrollo web Backend.</p>
+                                    <p>🎓 Actualmente curso la carrera de Técnico Superior en Programación.</p>
+                                </div>
                             </aside>
                         </figure>
 
@@ -39,24 +41,28 @@
                         
                         <figure class="habilidades">
                             <strong>Habilidades</strong>
+                            <br>
+                            <h3 id="clase-habilidad">Frontend</h3>
                             <ul class="elementos-habilidades">
-                                <li><img src="./images/habilidades/html5-original-wordmark.svg" alt="HTML5" class="habilidad"></li>
-                                <li><img src="./images/habilidades/css3-original-wordmark.svg" alt="CSS3" class="habilidad"></li>
-                                <li><img src="./images/habilidades/javascript-js.svg" alt="JavaScript" class="habilidad"></li>
-                                <li><img src="./images/habilidades/python.svg" alt="Python" class="habilidad"></li>
-                                <br>
-                                <li><img src="./images/habilidades/postgresql.svg" alt="PostgreSQL" class="habilidad"></li>
-                                <li><img src="./images/habilidades/sqlite.svg" alt="SQLite" class="habilidad"></li>
-                                <li><img src="./images/habilidades/file-type-django.svg" alt="Django" class="habilidad"></li>
+                                <li class="habilidad"><img src="./images/habilidades/html5-original-wordmark.svg" alt="HTML5" ></li>
+                                <li class="habilidad"><img src="./images/habilidades/css3-original-wordmark.svg" alt="CSS3" ></li>
+                                <li class="habilidad"><img src="./images/habilidades/javascript-js.svg" alt="JavaScript" ></li>
+                            </ul>
+                            <h3 id="clase-habilidad">Backend</h3>
+                            <ul class="elementos-habilidades">
+                                <li class="habilidad"><img src="./images/habilidades/python.svg" alt="Python"></li>
+                                <li class="habilidad"><img src="./images/habilidades/mysql.svg" alt="MySQL" ></li>
+                                <li class="habilidad"><img src="./images/habilidades/file-type-django.svg" alt="Django"></li>
                             </ul>
                         </figure>
 
                         <figure class="habilidades">
                             <strong>Herramientas adicionales</strong>
-                            <ul class="habilidades-adicionales">
-                                <li><img src="./images/habilidades/adobe-photoshop.svg" alt="Adobe Photoshop" class="habilidad"></li>
-                                <li><img src="./images/habilidades/premierepro.svg" alt="Adobe Premiere Pro" class="habilidad"></li>
-                                <li><img src="./images/habilidades/adobe-dreamweaver.svg" alt="Adobe Dreamweaver" class="habilidad"></li>
+                            <br>
+                            <ul class="elementos-habilidades">
+                                <li class="habilidad"><img src="./images/habilidades/adobe-photoshop.svg" alt="Adobe Photoshop" ></li>
+                                <li class="habilidad"><img src="./images/habilidades/premierepro.svg" alt="Adobe Premiere Pro" ></li>
+                                <li class="habilidad"><img src="./images/habilidades/adobe-dreamweaver.svg" alt="Adobe Dreamweaver" ></li>
                             </ul>
                         </figure>
                     </article>
